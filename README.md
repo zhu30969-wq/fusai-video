@@ -4,7 +4,7 @@
 
 ## 访问入口
 
-- 固定页面：[https://zhu30969-wq.github.io/fusai-video/](https://zhu30969-wq.github.io/fusai-video/)
+- 固定页面：[https://zhu30969-wq.github.io/fusai-video/watch.html](https://zhu30969-wq.github.io/fusai-video/watch.html)
 - 视频直链：[https://github.com/zhu30969-wq/fusai-video/releases/latest/download/fusai-video.mp4](https://github.com/zhu30969-wq/fusai-video/releases/latest/download/fusai-video.mp4)
 - 最新版本：[https://github.com/zhu30969-wq/fusai-video/releases/latest](https://github.com/zhu30969-wq/fusai-video/releases/latest)
 
