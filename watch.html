@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <title>蝶翼寻光—剖析光栅衍射原理</title>
+  <style>
+    /*
+      可见区域严格限制为单个视频元素。
+      页面与视频都使用黑色背景，避免竖屏设备剩余区域出现白边或其他装饰。
+    */
+    html,
+    body {
+      margin: 0;
+      min-height: 100%;
+      background: #000;
+    }
+
+    video {
+      display: block;
+      width: 100vw;
+      height: auto;
+      margin: 0;
+      background: #000;
+    }
+  </style>
+</head>
+<body>
+  <!--
+    controls 保留播放、暂停和音量能力；控件由微信或 QQ 的系统播放器按需覆盖显示，
+    不会在页面中形成额外的标题、按钮、说明、卡片或页脚。
+  -->
+  <video
+    controls
+    preload="metadata"
+    playsinline
+    webkit-playsinline
+    disablepictureinpicture
+    poster="video-poster.png"
+  >
+    <source src="https://github.com/zhu30969-wq/fusai-video/releases/latest/download/fusai-video.mp4" type="video/mp4">
+  </video>
+</body>
+</html>
