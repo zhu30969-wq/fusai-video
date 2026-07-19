@@ -2,51 +2,44 @@
 <html lang="zh-CN">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="蝶翼寻光—剖析光栅衍射原理">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
   <title>蝶翼寻光—剖析光栅衍射原理</title>
   <style>
     /*
-      页面仅呈现标题和视频播放器，不加载第三方字体、脚本或装饰资源。
-      max-width 和横向内边距只用于确保手机竖屏、微信与 QQ 内置浏览器中不会溢出。
+      根入口与二维码专用入口保持完全相同：正文只有一个全宽视频。
+      黑色页面背景仅用于填充竖屏剩余空间，不引入任何可见界面元素。
     */
-    * {
-      box-sizing: border-box;
-    }
-
+    html,
     body {
       margin: 0;
-      padding: 24px 16px;
-      color: #111;
-      background: #fff;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif;
-    }
-
-    h1 {
-      width: min(960px, 100%);
-      margin: 0 auto 20px;
-      font-size: clamp(1.35rem, 5vw, 2.25rem);
-      line-height: 1.35;
-      text-align: center;
+      min-height: 100%;
+      background: #000;
     }
 
     video {
       display: block;
-      width: min(960px, 100%);
-      max-height: calc(100vh - 120px);
-      margin: 0 auto;
+      width: 100vw;
+      height: auto;
+      margin: 0;
       background: #000;
     }
   </style>
 </head>
 <body>
-  <h1>蝶翼寻光—剖析光栅衍射原理</h1>
-
   <!--
-    playsinline 避免微信、QQ 等移动端环境在允许的情况下强制全屏。
-    视频地址使用 releases/latest 固定别名，后续更换 Release 版本时二维码无需改变。
+    微信与 QQ 会接管 controls 的具体外观；页面本身不创建任何额外控件或说明。
   -->
-  <video controls preload="metadata" playsinline webkit-playsinline>
+  <video
+    controls
+    preload="metadata"
+    playsinline
+    webkit-playsinline
+    disablepictureinpicture
+    poster="video-poster.png"
+  >
     <source src="https://github.com/zhu30969-wq/fusai-video/releases/latest/download/fusai-video.mp4" type="video/mp4">
   </video>
 </body>
